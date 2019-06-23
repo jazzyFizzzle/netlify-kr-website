@@ -5,13 +5,45 @@
 $kaldi-red: #D64000
 $kaldi-red-invert: #fff
 
+.containerX
+  img
+    max-height: 500px !important
+    filter: brightness(0.5)
+
+
 $primary: $kaldi-red
 $primary-invert: $kaldi-red-invert
 $body-color: #333
 $black: #2b2523
 
+#navMenu
+  color: white
+
 .navbar .navbar-menu
   box-shadow:none !important
+
+.containerX 
+  position: relative
+  text-align: center
+  
+
+.randomo
+  position: absolute
+  top: 50%
+  left: 50%
+  transform: translate(-50%, -50%)
+  text-align: center
+  h1
+    text-transform: uppercase
+    font-size: 40px
+    color: hotpink
+  h6
+    color: white
+
+.section-heading
+    text-transform: uppercase !important
+    font-size: 40px !important
+    color: hotpink !important
 
 .content .taglist
   list-style: none
@@ -71,18 +103,28 @@ $black: #2b2523
 .margin-top-0
   margin-top: 0 !important
 
-.navbar-item .icon
-  color: $primary
+.navbar-item
+  color: white
 // Override for use of svg's from https://simpleicons.org/
 .icon svg
   width: 1.5rem
   height: 1.5rem
   fill: currentColor
-.navbar-brand .navbar-item.logo
+.navbar-brand
   padding: 0 1rem
+  margin-top: 7px
+  margin-bottom: 7px
+  height: 50px
+  width: 50px
+  background-color: hotpink
+  border-radius: 50%
 footer.footer
   padding: 3rem 0rem 0rem
   background-color: transparent
+
+nav
+  background-color: gray
+  color: white
 
 //Menu overrides
 $menu-item-color: $white-ter

@@ -33,17 +33,25 @@ const Navbar = class extends React.Component {
   }
 
   render() {
+    const divStyle = {
+      backgroundColor: 'gray',
+    };
+    
+    const niStyle = {
+      color: 'white',
+      textTransform: 'uppercase'
+    };
+    
+    
     return (
       <nav
-        className="navbar is-transparent"
+        className="navbar"
         role="navigation"
         aria-label="main-navigation"
+        style={divStyle}
       >
         <div className="container">
           <div className="navbar-brand">
-            <Link to="/" className="navbar-item" title="Logo">
-              <img src={logo} alt="Kaldi" style={{ width: '88px' }} />
-            </Link>
             {/* Hamburger menu */}
             <div
               className={`navbar-burger burger ${this.state.navBarActiveClass}`}
@@ -59,34 +67,22 @@ const Navbar = class extends React.Component {
             id="navMenu"
             className={`navbar-menu ${this.state.navBarActiveClass}`}
           >
+          
+            <div className="navbar-end has-text-centered">
             <div className="navbar-start has-text-centered">
-              <Link className="navbar-item" to="/about">
+              <Link className="navbar-item" to="/about" style={niStyle}>
                 About
               </Link>
-              <Link className="navbar-item" to="/products">
+              <Link className="navbar-item" to="/products" style={niStyle}>
                 Products
               </Link>
-              <Link className="navbar-item" to="/blog">
+              <Link className="navbar-item" to="/blog" style={niStyle}>
                 Blog
               </Link>
-              <Link className="navbar-item" to="/contact">
+              <Link className="navbar-item" to="/contact" style={niStyle}>
                 Contact
               </Link>
-              <Link className="navbar-item" to="/contact/examples">
-                Form Examples
-              </Link>
             </div>
-            <div className="navbar-end has-text-centered">
-              <a
-                className="navbar-item"
-                href="https://github.com/netlify-templates/gatsby-starter-netlify-cms"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <span className="icon">
-                  <img src={github} alt="Github" />
-                </span>
-              </a>
             </div>
           </div>
         </div>

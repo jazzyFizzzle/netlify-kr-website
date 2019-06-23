@@ -1,10 +1,28 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { Link, graphql } from 'gatsby'
-
+import "react-image-gallery/styles/css/image-gallery.css";
 import Layout from '../components/Layout'
 import Features from '../components/Features'
 import BlogRoll from '../components/BlogRoll'
+import ImageGallery from 'react-image-gallery';
+
+import who from '../../static/img/kr-web-images/img1.jpg'
+
+const images = [
+  {
+    original: who,
+    thumbnail: who,
+  },
+  {
+    original: who,
+    thumbnail: who,
+  },
+  {
+    original: who,
+    thumbnail: who,
+  }
+]
 
 export const IndexPageTemplate = ({
   image,
@@ -14,55 +32,21 @@ export const IndexPageTemplate = ({
   mainpitch,
   description,
   intro,
+  
 }) => (
   <div>
-    <div
-      className="full-width-image margin-top-0"
-      style={{
-        backgroundImage: `url(${
-          !!image.childImageSharp ? image.childImageSharp.fluid.src : image
-        })`,
-        backgroundPosition: `top left`,
-        backgroundAttachment: `fixed`,
-      }}
-    >
-      <div
-        style={{
-          display: 'flex',
-          height: '150px',
-          lineHeight: '1',
-          justifyContent: 'space-around',
-          alignItems: 'left',
-          flexDirection: 'column',
-        }}
-      >
-        <h1
-          className="has-text-weight-bold is-size-3-mobile is-size-2-tablet is-size-1-widescreen"
-          style={{
-            boxShadow:
-              'rgb(255, 68, 0) 0.5rem 0px 0px, rgb(255, 68, 0) -0.5rem 0px 0px',
-            backgroundColor: 'rgb(255, 68, 0)',
-            color: 'white',
-            lineHeight: '1',
-            padding: '0.25em',
-          }}
-        >
-          {title}
-        </h1>
-        <h3
-          className="has-text-weight-bold is-size-5-mobile is-size-5-tablet is-size-4-widescreen"
-          style={{
-            boxShadow:
-              'rgb(255, 68, 0) 0.5rem 0px 0px, rgb(255, 68, 0) -0.5rem 0px 0px',
-            backgroundColor: 'rgb(255, 68, 0)',
-            color: 'white',
-            lineHeight: '1',
-            padding: '0.25em',
-          }}
-        >
-          {subheading}
-        </h3>
-      </div>
+    <div className="containerX">
+       <ImageGallery 
+          items={images} 
+          showFullscreenButton={false}
+          showThumbnails={false}
+          showNav={true}
+          showPlayButton={false} 
+          sizes="(max-width: 30em) 50vw, (max-width: 50em) 50vw, calc(33vw - 100px)" />
+    </div>
+    <div className="randomo">
+          <h1>Rose Productions</h1>
+          <h6>Im a spoilt child and I am a little bit psychotic. Please help me fund my film that my family can totally afford</h6>
     </div>
     <section className="section section--gradient">
       <div className="container">
@@ -70,39 +54,18 @@ export const IndexPageTemplate = ({
           <div className="columns">
             <div className="column is-10 is-offset-1">
               <div className="content">
-                <div className="content">
+                <div className="content has-text-centered">
+                    <h1 className="section-heading">ABOUT ME</h1>
                   <div className="tile">
-                    <h1 className="title">{mainpitch.title}</h1>
+                  <p>I started Rose Productions so that I could put all the work I've done under one name, regarding script writing and film directing. I'm currently getting my degree in Film and Television at City Varsity, and I am in my last year. I completed one year of Film and Television at UCT, then transferred to City Varsity as I wanted to gain a more practical learning experience.  My greatest passion is directing, and I've always liked to write my own scripts because then I can envision the film as I am writing, making the directing process a lot smoother. I have had 7 years of training in the dramatic arts and have received my gold medal for grade 8 drama from the London Academy of Music and Dramatic Arts (LAMDA). These years of acting experience have helped me immensely in my role as a director. I participated in the 48hour Film Festival in 2017 as the director for our team; and our film got nominated for 'Best Supporting Actress' and 'Best Original Soundtrack' (part of which I composed). 
+I am eager to work on more music videos in the near future as I find they allow for great creative freedom. I will always continue to pursue my love for film by writing and directing short films and hopefully, one day, a feature-length film.  
+</p>
                   </div>
+                </div>
+                <div className="content has-text-centered">
+                    <h1 className="section-heading">FEATURED FILMS</h1>
                   <div className="tile">
-                    <h3 className="subtitle">{mainpitch.description}</h3>
-                  </div>
-                </div>
-                <div className="columns">
-                  <div className="column is-12">
-                    <h3 className="has-text-weight-semibold is-size-2">
-                      {heading}
-                    </h3>
-                    <p>{description}</p>
-                  </div>
-                </div>
-                <Features gridItems={intro.blurbs} />
-                <div className="columns">
-                  <div className="column is-12 has-text-centered">
-                    <Link className="btn" to="/products">
-                      See all products
-                    </Link>
-                  </div>
-                </div>
-                <div className="column is-12">
-                  <h3 className="has-text-weight-semibold is-size-2">
-                    Latest stories
-                  </h3>
-                  <BlogRoll />
-                  <div className="column is-12 has-text-centered">
-                    <Link className="btn" to="/blog">
-                      Read more
-                    </Link>
+                  <p>{description}</p>
                   </div>
                 </div>
               </div>
