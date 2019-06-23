@@ -24,15 +24,7 @@ const images = [
   }
 ]
 
-export const IndexPageTemplate = ({
-  image,
-  title,
-  heading,
-  subheading,
-  mainpitch,
-  description,
-  intro,
-  
+export const IndexPageTemplate = ({  
 }) => (
   <div>
     <div className="containerX">
@@ -46,7 +38,7 @@ export const IndexPageTemplate = ({
     </div>
     <div className="randomo">
           <h1>Rose Productions</h1>
-          <h6>Im a spoilt child and I am a little bit psychotic. Please help me fund my film that my family can totally afford</h6>
+          <h6>I started Rose Productions so that I could put all the work I've done under one name, regarding script writing and film directing. </h6>
     </div>
     <section className="section section--gradient">
       <div className="container">
@@ -65,7 +57,7 @@ I am eager to work on more music videos in the near future as I find they allow 
                 <div className="content has-text-centered">
                     <h1 className="section-heading">FEATURED FILMS</h1>
                   <div className="tile">
-                  <p>{description}</p>
+
                   </div>
                 </div>
               </div>

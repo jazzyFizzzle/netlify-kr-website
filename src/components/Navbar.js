@@ -39,7 +39,10 @@ const Navbar = class extends React.Component {
     
     const niStyle = {
       color: 'white',
-      textTransform: 'uppercase'
+      textTransform: 'uppercase',
+      fontWeight: 'bold',
+      letterSpacing: '-1px',
+      fontSize: '14px'
     };
     
     
