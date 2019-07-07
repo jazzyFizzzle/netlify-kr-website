@@ -1,5 +1,5 @@
 @import "~bulma/sass/utilities/initial-variables"
-@import "~video-react/styles/scss/video-react"
+// @import "~video-react/styles/scss/video-react"
 
 // Config vars
 // Kaldi logo brand color: #FD461E
@@ -8,8 +8,13 @@ $kaldi-red-invert: #fff
 
 .containerX
   img
-    max-height: 500px !important
-    filter: grayscale(100%);
+    filter: grayscale(100%)
+    background-size: cover
+    width: 100%
+    max-height: 500px
+
+.image-gallery-image
+  background: black !important
 
 
 $primary: $kaldi-red

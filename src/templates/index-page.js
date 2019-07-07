@@ -8,7 +8,11 @@ import BlogRoll from '../components/BlogRoll'
 import ImageGallery from 'react-image-gallery';
 import ReactPlayer from 'react-player'
 
-import who from '../../static/img/kr-web-images/img1.jpg'
+import who from '../../static/img/kr-web-images/img1-cropped.jpg'
+import who1 from '../../static/img/kr-web-images/img4-cropped2.jpeg'
+import who2 from '../../static/img/kr-web-images/img1-cropped.jpg'
+import who3 from '../../static/img/kr-web-images/img4-cropped2.jpeg'
+import who4 from '../../static/img/kr-web-images/img1-cropped.jpg'
 
 const images = [
   {
@@ -16,12 +20,20 @@ const images = [
     thumbnail: who,
   },
   {
-    original: who,
-    thumbnail: who,
+    original: who1,
+    thumbnail: who1,
   },
   {
-    original: who,
-    thumbnail: who,
+    original: who2,
+    thumbnail: who2,
+  },
+  {
+    original: who3,
+    thumbnail: who3,
+  },
+  {
+    original: who4,
+    thumbnail: who4,
   }
 ]
 
