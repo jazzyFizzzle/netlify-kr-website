@@ -52,7 +52,7 @@ export const IndexPageTemplate = ({
                       can envision the film as I am writing, making the directing process a lot smoother. I have had 7 years of training in the dramatic arts and have received my gold medal for grade 8 drama from the London Academy of Music and Dramatic Arts (LAMDA). 
                      </p>
                   </div>
-                <button>Read More</button>
+                <button className="button-class">Read More</button>
                 </div>
                 <div className="content has-text-centered ">
                     <h1 className="section-heading" style={{marginBottom: '2em !important'}}>FEATURED FILMS</h1>
@@ -69,7 +69,7 @@ export const IndexPageTemplate = ({
                             }}}/>
                       </div>
                   </div>
-                  <button>Read More</button>
+                  <button className="button-class">Read More</button>
                 </div>
                 <div className="content has-text-centered">
                     <h1 className="section-heading">CURRENT PROJECT</h1>
@@ -80,7 +80,7 @@ export const IndexPageTemplate = ({
                     a voice to women everywhere who have been too afraid to turn the volume up, and let the world hear what they have to say...
                   </p>
                   </div>
-                  <button>Read More</button>
+                  <button className="button-class">Read More</button>
                 </div>
               </div>
             </div>

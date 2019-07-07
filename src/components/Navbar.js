@@ -73,19 +73,19 @@ const Navbar = class extends React.Component {
           
             <div className="navbar-end has-text-centered">
             <div className="navbar-start has-text-centered">
-              <Link className="navbar-item" to="/about" style={niStyle}>
+              <Link className="navbar-item" to="#" style={niStyle}>
                 About
               </Link>
-              <Link className="navbar-item" to="/products" style={niStyle}>
+              <Link className="navbar-item" to="#" style={niStyle}>
                 Featured Films
               </Link>
-              <Link className="navbar-item" to="/blog" style={niStyle}>
+              <Link className="navbar-item" to="#" style={niStyle}>
                 Curent Project
               </Link>
-              <Link className="navbar-item" to="/contact" style={niStyle}>
+              <Link className="navbar-item" to="#" style={niStyle}>
                 Contact
               </Link>
-              <Link className="navbar-item" to="/contact" style={niStyle}>
+              <Link className="navbar-item" to="#" style={niStyle}>
                 Donate
               </Link>
             </div>
