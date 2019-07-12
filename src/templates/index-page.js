@@ -8,8 +8,8 @@ import BlogRoll from '../components/BlogRoll'
 import ImageGallery from 'react-image-gallery';
 import ReactPlayer from 'react-player'
 
-import who from '../../static/img/kr-web-images/img1-cropped.jpg'
-import who1 from '../../static/img/kr-web-images/img4-cropped2.jpeg'
+import who from '../../static/img/kr-web-images/img1_opt.jpg'
+import who1 from '../../static/img/kr-web-images/other1_opt.jpg'
 
 const images = [
   {
@@ -32,16 +32,16 @@ export const IndexPageTemplate = ({
           showThumbnails={false}
           showNav={true}
           showPlayButton={false} 
-          sizes="(max-width: 30em) 50vw, (max-width: 50em) 50vw, calc(33vw - 100px)" />
-    </div>
-    <div className="randomo">
-          <h1>Rose Productions</h1>
-          <h6>I started Rose Productions so that I could put all the work I've done under one name, regarding script writing and film directing. </h6>
+          sizes="(max-width: 30em) 50vw, (max-width: 1000px) 50vw, calc(33vw - 100px)" />
+      <div className="randomo">
+            <h1>Rose Productions</h1>
+            <h6>I started Rose Productions so that I could put all the work I've done under one name, regarding script writing and film directing. </h6>
+      </div>
     </div>
     <section className="section section--gradient">
       <div className="container">
         <div className="section">
-          <div className="columns">
+          <div className="columns has-text-centered">
             <div className="column is-10 is-offset-1">
               <div className="content">
                 <div className="content has-text-centered">
@@ -58,19 +58,24 @@ export const IndexPageTemplate = ({
                     <h1 className="section-heading" style={{marginBottom: '2em !important'}}>FEATURED FILMS</h1>
                     <div style={{backgroundColor: '#B8B8B8'}} className="tile">
                       <div className="columns">
-                        <div className="column is-6" style={{width: '100%'}}>description</div>
-                        <ReactPlayer 
-                          className="column is-6" 
-                          url='https://www.youtube.com/watch?v=C3SFN-knjMY&t=2s'  
-                          width='100%'
-                          config={{
-                            youtube: {
-                              playerVars: { showinfo: 1 }
-                            }}}/>
+                        <div className="column">
+                          <div className="player-wrapper">   
+                            <ReactPlayer
+                              className="react-player" 
+                              width='100%'
+                              height='100%'
+                              url='https://www.youtube.com/watch?v=C3SFN-knjMY&t=2s'  
+                              config={{
+                                youtube: {
+                                  playerVars: { showinfo: 1 }
+                                }}}/>
+                          </div>
+                        </div>
                       </div>
                   </div>
-                  <button className="button-class">Read More</button>
                 </div>
+                <button className="button-class has-text-centered">Read More</button>
+                <br></br>
                 <div className="content has-text-centered">
                     <h1 className="section-heading">CURRENT PROJECT</h1>
                   <div className="tile">
