@@ -6,14 +6,26 @@
 $kaldi-red: #D64000
 $kaldi-red-invert: #fff
 
+body
+  line-height: 10px
+  letter-spacing: 2px;
+
 .button-class
-  border: none
-  background: purple
-  color: white
-  border-radius: 3px
-  margin-bottom: 1em
+  background-color: #7d55c7
+  -moz-border-radius: 28px
+  -webkit-border-radius: 28px
+  border-radius: 28px
+  display: inline-block
+  cursor: pointer
+  color: #ffffff
+  font-family: Arial
+  font-size: 17px
+  padding: 10px 20px
+  text-decoration: none
+  text-shadow: 0px 1px 0px #ae8ced
 
 .containerX
+  background: rgba(0, 0, 0, 1)
   img
     display: flex
     align-content: center
@@ -28,7 +40,7 @@ $kaldi-red-invert: #fff
 
 $primary: $kaldi-red
 $primary-invert: $kaldi-red-invert
-$body-color: #333
+$body-color: #534752
 $black: #2b2523
 
 #navMenu
@@ -53,16 +65,17 @@ $black: #2b2523
   h1
     text-transform: uppercase
     font-size: 40px
-    color: #7e24d2
+    color: #e4b7e4
+    font-weight: 600
   h6
     text-transform: uppercase
     letter-spacing: 2px
-    color: white
+    color: #ffffff
 
 .section-heading
     text-transform: uppercase !important
     font-size: 30px !important
-    color: #7e24d2 !important
+    color: #705b8a !important
     margin-bottom: 1em
 
 .content .taglist
@@ -115,8 +128,6 @@ $black: #2b2523
     font-weight: 700
     color: #CC3700
     text-align: center
-    -webkit-box-shadow: inset 0 0 0 2px #CC3700
-    box-shadow: inset 0 0 0 2px #f40
     -webkit-transition: all .15s ease
     transition: all .15s ease
 
@@ -136,7 +147,7 @@ $black: #2b2523
   margin-bottom: 7px
   height: 50px
   width: 50px
-  background-color: #7e24d2
+  background-color: #B884CB
   border-radius: 50%
 footer.footer
   padding: 3rem 0rem 0rem
@@ -176,13 +187,13 @@ $menu-label-color: $white-ter
 
 // blog roll
 .blog-list-item.is-featured
-  background-color: #d6400033;
+  background-color: #d6400033
 .blog-list-item header
-  display: flex;
-  margin-bottom: 1em;
+  display: flex
+  margin-bottom: 1em
 .blog-list-item .featured-thumbnail
-  flex-basis: 35%;
-  margin: 0 1.5em 0 0;
+  flex-basis: 35%
+  margin: 0 1.5em 0 0
 
 
 @import "~bulma"
@@ -191,7 +202,7 @@ $menu-label-color: $white-ter
 // responsiveness
 +tablet-only
   .blog-list-item .featured-thumbnail
-    flex-basis: 50%;
+    flex-basis: 50%
   .navbar-brand
     margin-top: 0px
     margin-bottom: 0px
@@ -204,7 +215,7 @@ $menu-label-color: $white-ter
     text-align: center
     h1
       text-transform: uppercase
-      color: #7e24d2
+      color: #f5b5fc
       font-size: 30px
     h6
       text-transform: uppercase
@@ -227,7 +238,7 @@ $menu-label-color: $white-ter
     text-align: center
     h1
       text-transform: uppercase
-      color: #7e24d2
+      color: #f5b5fc
       font-size: 20px
     h6
       text-transform: uppercase
@@ -238,9 +249,8 @@ $menu-label-color: $white-ter
   .blog-list-item header
     display: block
   .blog-list-item .featured-thumbnail
-    text-align: center;
-    max-width: 70%;
-    margin: 0 0 1em;
+    text-align: center
+    max-width: 70%
 
   .navbar-item
     color: black !important

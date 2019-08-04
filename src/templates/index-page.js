@@ -1,11 +1,9 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { Link, graphql } from 'gatsby'
-import "react-image-gallery/styles/css/image-gallery.css";
+import 'react-image-gallery/styles/css/image-gallery.css'
 import Layout from '../components/Layout'
-import Features from '../components/Features'
-import BlogRoll from '../components/BlogRoll'
-import ImageGallery from 'react-image-gallery';
+import ImageGallery from 'react-image-gallery'
 import ReactPlayer from 'react-player'
 
 import who from '../../static/img/kr-web-images/img1_opt.jpg'
@@ -13,13 +11,13 @@ import who1 from '../../static/img/kr-web-images/other1_opt.jpg'
 
 const images = [
   {
-    original: who,
-    thumbnail: who,
-  },
-  {
     original: who1,
     thumbnail: who1,
   },
+  {
+    original: who,
+    thumbnail: who,
+  }
 ]
 
 export const IndexPageTemplate = ({  
@@ -52,29 +50,63 @@ export const IndexPageTemplate = ({
                       can envision the film as I am writing, making the directing process a lot smoother. I have had 7 years of training in the dramatic arts and have received my gold medal for grade 8 drama from the London Academy of Music and Dramatic Arts (LAMDA). 
                      </p>
                   </div>
-                <button className="button-class">Read More</button>
+                <a href="/about"><button className="button-class" to="/about">Read More</button></a>
                 </div>
+                <br></br>
+                <br></br>
+                <br></br>
+                <br></br>
                 <div className="content has-text-centered ">
                     <h1 className="section-heading" style={{marginBottom: '2em !important'}}>FEATURED FILMS</h1>
-                    <div style={{backgroundColor: '#B8B8B8'}} className="tile">
-                      <div className="columns">
-                        <div className="column">
-                          <div className="player-wrapper">   
-                            <ReactPlayer
-                              className="react-player" 
-                              width='100%'
-                              height='100%'
-                              url='https://www.youtube.com/watch?v=C3SFN-knjMY&t=2s'  
-                              config={{
-                                youtube: {
-                                  playerVars: { showinfo: 1 }
-                                }}}/>
-                          </div>
-                        </div>
+                    <div style={{ backgroundColor: '#B8B8B8' }} className="tile">
+                      <div className="player-wrapper">
+                        <ReactPlayer
+                          className="react-player"
+                          width='100%'
+                          height='475px'
+                          url='https://www.youtube.com/watch?v=C3SFN-knjMY&t=2s'
+                          config={{
+                            youtube: {
+                              playerVars: { showinfo: 1 }
+                            }
+                          }} />
                       </div>
-                  </div>
+                    <div class="column">
+                      <h3>Title</h3>
+                      <p>Wake Up, I'm Sleeping</p>
+                      <h3>Description:</h3>
+                      <p>A psychological horror short film that looks at a man haunted by insomnia</p>
+                      <h3>Key Crew:</h3>
+                      <ul style={{ listStyleType: 'none' }}>
+                        <li>
+                          Produced by Celine Picard
+                            </li>
+                        <li>
+                          Directed by Kayla Rose Gersohn
+                            </li>
+                        <li>
+                          Written by Kayla Rose Gersohn &amp; Zachary Meltzer
+                            </li>
+                        <li>
+                          Cinematography by Joshua Daniel Hubbard
+                            </li>
+                        <li>
+                          Edited by  Zachary Lord-Rule
+                            </li>
+                        <li>
+                          Sound Design by Robin Faull
+                            </li>
+                        <li>
+                          Score by Sam Goldberg
+                            </li>
+                      </ul>
+                    </div>
                 </div>
-                <button className="button-class has-text-centered">Read More</button>
+                </div>
+                <a href="/past-films"><button className="button-class has-text-centered">Read More</button></a>
+                <br></br>
+                <br></br>
+                <br></br>
                 <br></br>
                 <div className="content has-text-centered">
                     <h1 className="section-heading">CURRENT PROJECT</h1>
@@ -85,7 +117,7 @@ export const IndexPageTemplate = ({
                     a voice to women everywhere who have been too afraid to turn the volume up, and let the world hear what they have to say...
                   </p>
                   </div>
-                  <button className="button-class">Read More</button>
+                  <a href="/current-project"><button className="button-class">Read More</button></a>
                 </div>
               </div>
             </div>
