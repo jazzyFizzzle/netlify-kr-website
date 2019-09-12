@@ -124,6 +124,7 @@ export const IndexPageTemplate = ({
           </div>
         </div>
       </div>
+      <div style={{fontSize: '5px', textAlign: 'center'}}>Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
     </section>
   </div>
 )

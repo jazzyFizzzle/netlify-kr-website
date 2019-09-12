@@ -106,7 +106,7 @@ class pastFilms extends Component {
                         Makeup by Erin Carlisle and Ariella Sher
                             </li>
                     </ul>
-                    <h3>SPECIAL THANKS TO VARSITY COLLEGE!</h3>
+                    <h3>SPECIAL THANKS TO CITY VARSITY!</h3>
                   </div>
                 </div>
 
@@ -161,7 +161,7 @@ class pastFilms extends Component {
                         Makeup by Erin Carlisle and Ariella Sher
                             </li>
                     </ul>
-                    <h3>SPECIAL THANKS TO VARSITY COLLEGE!</h3>
+                    <h3>SPECIAL THANKS TO CITY VARSITY!</h3>
                   </div>
                 </div>
                 <a href="/"><button className="button-class">Go Back</button></a>

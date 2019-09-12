@@ -1,7 +1,8 @@
 import React from 'react'
 import { Link } from 'gatsby'
-import github from '../img/github-icon.svg'
-import logo from '../img/logo.svg'
+import facebook from '../img/social/facebook.svg'
+import instagram from '../img/social/youtube-symbol.svg'
+
 
 const Navbar = class extends React.Component {
   constructor(props) {
@@ -91,6 +92,22 @@ const Navbar = class extends React.Component {
               <Link className="navbar-item" to="/donate" style={niStyle}>
                 Donate
               </Link>
+              <div className="column is-4 social" style={{position: 'relative', top: 10}}>
+                <a title="facebook" href="https://www.facebook.com/RoseProductionsFilms/?modal=admin_todo_tour">
+                  <img
+                    src={facebook}
+                    alt="Facebook"
+                    style={{ width: '1em', height: '1em' }}
+                  />
+                </a>
+                <a title="youtube" href="https://www.youtube.com/channel/UClZB5_q3doBaMOpeKwVtxwg?view_as=subscriber">
+                  <img
+                    src={instagram}
+                    alt="Instagram"
+                    style={{ width: '1em', height: '1em' }}
+                  />
+                </a>
+              </div>
             </div>
             </div>
           </div>
